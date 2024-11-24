@@ -1,0 +1,99 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0; /* Add spacing around the title */
+    animation: fadeIn 2s ease-in-out;
+    text-align: center; /* Center the text */
+}
+
+/* Form container */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+/* Labels */
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Input fields */
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    background: #fff;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

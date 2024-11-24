@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="/css/style1.css">
+</head>
+<body>
+    <h1>Chat Room</h1>
+    <div id="messages"></div>
+    <form id="chat-form">
+        <input type="text" id="message" placeholder="Type your message..." required>
+        <button type="submit">Send</button>
+    </form>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+</html>
